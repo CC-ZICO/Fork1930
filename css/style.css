@@ -48,13 +48,132 @@ ul {
 
 /* nav start */
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
 
+.nav__list__link {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 24px;
+    color: #131314;
+}
+
+.nav__link__sign {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 40px;
+    color: #131314;
+    padding: 0 41px;
+}
+
+.nav__link__join {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    padding: 0 41px;
+}
+
+.nav__item {
+    display: flex;
+    gap: 32px;
+}
 
 /* nav end */
 
 /* header start */
 
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 63px;
+}
 
+.header__title {
+    font-family: var(--primary-font);
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: 0.288px;
+    width: 437px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.header__title__block {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 54px;
+    color: var(--primary-color);
+    padding: 0 48px;
+    width: max-content;
+}
+
+.header__txt,
+.header__link__sign {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #46474E;
+    font-family: var(--primary-font);
+}
+
+.sign__block {
+    display: flex;
+    gap: 4px;
+}
+
+.block1 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.header__block2 {
+    display: flex;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: max-content;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.header__block2__txt {
+    font-size: 14px;
+    line-height: 14px;
+    color: #131314;
+    font-weight: 400;
+    font-family: var(--primary-font);
+}
+
+.block2 {
+    padding: 0 24px 0 16px;
+    border-right: #E8E8E9 1px solid;
+    border-left: #E8E8E9 1px solid;
+
+
+}
+
+.x {
+    font-size: 20px;
+    font-weight: 500;
+    transform: rotate(45deg);
+}
 
 /* header end */
 
@@ -234,13 +353,139 @@ ul {
 
 /* company start */
 
+.company {
+    padding: 130px 0 70px;
+    position: relative;
+}
 
+.company::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #E8E8E9;
+    max-width: 912px;
+    width: 100%;
+    
+}
+
+.company__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.company__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.company__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 48px;
+    max-width: 315px;
+    width: 100%;
+}
+
+.company__txt {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 17px;
+    max-width: 408px;
+    width: 100%;
+}
+
+.company__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+}
+
+.company__card {
+    padding: 25px;
+    border: 1px solid #E8E8E9;
+    border-radius: 8px;
+}
+
+.company__person-image {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.company__person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    margin-bottom: 16px;
+}
+
+.company__person-info {
+    flex-grow: 1;
+}
+
+.company__person-title {
+    color: #000;
+}
+
+.company__person-txt {
+    font-size: 14px;
+    color: #697882;
+}
+
+.company__content-txt {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    max-width: 362px;
+    width: 100%;
+    
+}
+
+.company__content-txt:nth-child(1) {
+    margin-bottom: 17px;
+}
+
+.company__content-txt:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+.company__content-date {
+    font-family: var(--primary-font);
+    font-size: 13px;
+}
 
 /* company end */
 
 /* team start */
 
+.team {
+    padding: 174px 0 120px;
+}
 
+.team__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 28px;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+}
+
+.team__txt {
+    font-size: 17px;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 705px;
+    width: 100%;
+    line-height: 180%;
+}
 
 /* team end */
 
