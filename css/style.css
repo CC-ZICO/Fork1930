@@ -185,13 +185,139 @@ nav {
 
 /* company start */
 
+.company {
+    padding: 130px 0 70px;
+    position: relative;
+}
 
+.company::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #E8E8E9;
+    max-width: 912px;
+    width: 100%;
+    
+}
+
+.company__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.company__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.company__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 48px;
+    max-width: 315px;
+    width: 100%;
+}
+
+.company__txt {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 17px;
+    max-width: 408px;
+    width: 100%;
+}
+
+.company__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+}
+
+.company__card {
+    padding: 25px;
+    border: 1px solid #E8E8E9;
+    border-radius: 8px;
+}
+
+.company__person-image {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.company__person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    margin-bottom: 16px;
+}
+
+.company__person-info {
+    flex-grow: 1;
+}
+
+.company__person-title {
+    color: #000;
+}
+
+.company__person-txt {
+    font-size: 14px;
+    color: #697882;
+}
+
+.company__content-txt {
+    font-family: var(--primary-font);
+    font-size: 14px;
+    max-width: 362px;
+    width: 100%;
+    
+}
+
+.company__content-txt:nth-child(1) {
+    margin-bottom: 17px;
+}
+
+.company__content-txt:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+.company__content-date {
+    font-family: var(--primary-font);
+    font-size: 13px;
+}
 
 /* company end */
 
 /* team start */
 
+.team {
+    padding: 174px 0 120px;
+}
 
+.team__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 28px;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+}
+
+.team__txt {
+    font-size: 17px;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 705px;
+    width: 100%;
+    line-height: 180%;
+}
 
 /* team end */
 
