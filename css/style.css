@@ -77,7 +77,59 @@ ul {
 /* team end */
 
 /* footer start */
-
+footer{
+    background: #F6F6F6;
+    padding-top: 81px;
+    padding-bottom: 59px;
+}
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 15px; */
+}
+.footer__title{
+    font-size: 48px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.footer__txt{
+    font-size: 17px;
+    color: #46474E;
+    padding-bottom: 16px;
+}
+.footer__small-txt{
+   font-size: 11px;
+   max-width: 444px; 
+   text-align: center;
+   padding-bottom: 24px;
+}
+.footer__btn {
+    align-self:center;
+    padding: 20px 48px; 
+    
+}
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+.footer__list{
+    display: flex;
+   gap: 24px;
+   /* padding-top: 60px; */
+}
+.footer__link{
+    font-size: 14px;
+    color: #131314;
+}
+.footer_nav-txt{
+    font-size: 13px;
+    color: #46474E;
+}
 
 
 /* footer end */
